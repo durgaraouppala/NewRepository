@@ -8,6 +8,8 @@ public class TC1 {
 	@Test
 	public static void latestNewsValidation(){
 		try{
+			
+			//testcase with all the values
 			dStatus = AppFunc.launchBBCWord("ff");
 			Assert.assertEquals(dStatus, true, "BBC World launch not peroformed successfully");
 			dStatus = AppFunc.validateLatestNewsNavigation();
